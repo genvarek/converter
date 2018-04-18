@@ -1,8 +1,14 @@
 <!DOCTYPE html>
-
+{% load staticfiles %}
 <html>
 
     <head>
+
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Russo+One&amp;subset=cyrillic" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+
 
         <meta charset="utf-8">
         <title>Конвертер youtube - mp3</title>
@@ -13,12 +19,12 @@
 
     <body>
 
-    <h1>Онлайн-конвертер видео с youtube в mp3</h1>
+    <h1>Онлайн-конвертер видео с youtube в mp3</h1> <br> <br> <br>
 
     <form action="" method="get">
         <label>Вставьте ссылку на видео:
             <input type="text" name="youtube-link" value="https://www.youtube.com/watch?v=ffTF9ZOjAxU&t=318s"></label>
-        <input type="submit" value="Конвертриовать">
+        <input type="submit" value="Конвертировать">
 
     </form>
 

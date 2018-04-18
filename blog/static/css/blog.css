@@ -1,0 +1,15 @@
+body {
+    background-color: darkorange;
+    padding: 10em;
+    font-family: 'Russo One', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    display: block;
+}
+
+form {
+    text-align: center;
+    display: block;
+}
