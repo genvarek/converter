@@ -1,12 +1,13 @@
 from django.db import models
 
+class Query(models.Model):
+        class Meta:
+            db_table = "query_table"
 
-class Link(models.Model):
-    url = models.URLField(verbose_name='Ссылка')
+        link = models.URLField(verbose_name='Ссылка', default='')
+        link_date = models.DateTimeField(auto_now_add=True)
 
-    class Meta:
-        verbose_name = 'Ссылка'
-        verbose_name_plural = 'Ссылки'
+        def __str__(self):
+            return self.link
 
-    def __str__(self):
-        return self.url
+        objects = models.Manager()

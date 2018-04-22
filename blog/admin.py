@@ -1,4 +1,4 @@
 from django.contrib import admin
-from .models import Link
+from blog.models import Query
 
-admin.site.register(Link)
+admin.site.register(Query)
