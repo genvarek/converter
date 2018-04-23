@@ -22,12 +22,11 @@
 
     <h1>Онлайн-конвертер видео с youtube в mp3</h1> <br> <br> <br>
 
-    <form action="" method="get">
-        <label><legend>Вставьте ссылку на видео:</legend>
+    <form action="" method="POST">
+        {% csrf_token %}  {{ form }}
 
-
-            <input type="text" name="youtube-link" value="https://www.youtube.com/watch?v=ffTF9ZOjAxU&t=318s"></label>
-        <input type="submit" value="Конвертировать">
+        <label><legend>Вставьте ссылку на видео:</legend></label>
+            <input type="submit" value="Конвертировать">
 
     </form>
   </div>
