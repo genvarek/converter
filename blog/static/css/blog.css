@@ -13,3 +13,8 @@ form {
     text-align: center;
     display: block;
 }
+
+.put-the-link-pls {
+    position: relative;
+    left: 10px;
+}

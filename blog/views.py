@@ -13,6 +13,7 @@ def download_video(request):
     return render(request, 'post_list.html', context)
 
 def post_list(request):
+
     links = Query.objects.all()
 
     if request.method == "POST":

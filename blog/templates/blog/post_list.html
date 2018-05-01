@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 {% load staticfiles %}
-{% load bootstrap %}
+
 <html>
 
     <head>
@@ -22,15 +22,20 @@
 
     <h1>Онлайн-конвертер видео с youtube в mp3</h1> <br> <br> <br>
 
-    <form action="" method="POST">
+    <div style="padding-left: 400px; padding-right: 500px;"><form action="" method="POST">
         {% csrf_token %}  {{ form }}
 
-        <label><legend>Вставьте ссылку на видео:</legend></label>
-            <input type="submit" value="Конвертировать">
+        <label class="put-the-link-pls">Вставьте ссылку на видео:</label>
+        <input type="submit" value="Конвертировать">
 
-    </form>
-  </div>
-  </form>
+    </form></div>
+
+    <div>История запросов:
+        {% for link in links %}
+            <a href="{{ link }}">{{ link }}</a>
+        {% endfor %}
+    </div>
+
 
 
     </body>
